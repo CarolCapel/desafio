@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Inter:wght@500&family=Saira:wght@300&family=Sora:wght@600&display=swap');
+
+:root {
+
+    --fundo: #06090F;
+    --fundoDois: #0C0C0C;
+    --fundo-aviso:#151515;
+    --gradiente: linear-gradient(192.21deg, #04D361 0%, #0F5A31 100%);
+    --letras: #F9F9F9;
+    --letrasDois: rgba(174, 174, 174, 1);
+    --coloridos: #04D361;
+    --fonteUM: 'DM Sans', sans-serif;
+    --fonteDois: 'Sora', sans-serif;
+    --fonteTres: 'Inter', sans-serif;
+    --fonteQuatro: 'Saira', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: var(--fundo);
+    color: var(--letras);
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0 0 0;
+
+}
+
+.logo {
+    font-size: 40px;
+    font-family: var(--fonteQuatro);
+    font-weight: 300;
+}
+
+
+.strong {
+
+    background: var(--gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.link {
+    font-family: var(--fonteUM);
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--letras);
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid var(--coloridos);
+    padding: 21px 30px;
+    border-radius: 4px;
+}
+
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 8rem 0;
+}
+
+h1 {
+
+    font-family: var(--fonteDois);
+    font-size: 48px;
+   
+}
+
+h2 {
+    font-family: var(--fonteTres);
+    font-size: 32px;
+    margin: 1.5rem 0 6.56rem;
+    color: var(--coloridos);
+
+}
+
+.form-titulo {
+
+    font-family: var(--fonteTres);
+    font-size: 26px;
+    color: var(--letrasDois);
+    flex-wrap: wrap;
+    text-align: left;
+    width: 600px;
+    margin: 0 0 6rem;
+}
+
+.form-control {
+    position: relative;
+    margin: 0 0 2.5rem;
+    
+}
+
+.form-control input {
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 37, 41, 1);
+    display: block;
+    width: 600px;
+    height: 60px;
+    font-size: 18px;
+}
+
+.form-control label {
+    font-family: var(--fonteTres);
+    position: absolute;
+    margin: 0 0 8px;
+    bottom: 60px;
+}
+
+.btn {
+    background-color: var(--coloridos);
+    color: var(--fundoDois);
+    font-family: var(--fonteTres);
+    font-size: 24px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    width: 600px;
+    height: 60px;
+}
+
+.btn:active{
+   transform: scale(0.88);
+}
